@@ -5,13 +5,15 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>50F1F624-5576-42FE-84A0-CCFDE333E392</string>
+	<string>1A8AE030-236D-46A3-BED1-4167A7C90D3A</string>
 	<key>IDESourceControlProjectName</key>
 	<string>Ch1tSend</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>A733F53E-C914-4C72-BA7C-3356294F0E95</key>
 		<string>ssh://github.com/evx001/Xcode001.git</string>
+		<key>BF63480C-2302-46B0-A7B6-ABA30635AFFE</key>
+		<string>https://github.com/evx001/Ch1tSend.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>Ch1tSend/Ch1tSend.xcodeproj/project.xcworkspace</string>
@@ -19,9 +21,11 @@
 	<dict>
 		<key>A733F53E-C914-4C72-BA7C-3356294F0E95</key>
 		<string>../../..</string>
+		<key>BF63480C-2302-46B0-A7B6-ABA30635AFFE</key>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>ssh://github.com/evx001/Xcode001.git</string>
+	<string>https://github.com/evx001/Ch1tSend.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
@@ -35,6 +39,14 @@
 			<string>A733F53E-C914-4C72-BA7C-3356294F0E95</string>
 			<key>IDESourceControlWCCName</key>
 			<string>_Xcode</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>BF63480C-2302-46B0-A7B6-ABA30635AFFE</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Ch1tSend</string>
 		</dict>
 	</array>
 </dict>
