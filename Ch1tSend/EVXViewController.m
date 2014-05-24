@@ -29,9 +29,9 @@
     
     // [myImageView setImage:[UIImage imageNamed:@"food already"]];
 }
--(void)viewWillAppear:(BOOL)animated
+-(void)viewWillAppear:(BOOL)animated // this grabs the view on reload, keeps the view from vanishing.
 {
-    [super viewWillAppear:animated];
+    [super viewWillAppear:animated]; 
 
     myTextField.text = self.imageText;
 
