@@ -8,7 +8,8 @@
 
 #import "EVXViewController.h"
 
-@interface EVXViewController (){
+@interface EVXViewController()
+{
     IBOutlet UIImageView *myImageView;
     IBOutlet UITextField *myTextField;
 }
@@ -33,7 +34,7 @@
 {
     [super viewWillAppear:animated]; 
 
-    myTextField.text= self.imageText;
+    myTextField.text=self.imageText;
 
 }
 
@@ -75,7 +76,7 @@
 -(UIImage *)saveImageMessage {
     UIGraphicsBeginImageContextWithOptions(self.view.bounds.size, self.view.opaque, 0.0);
     [self.view.layer renderInContext:UIGraphicsGetCurrentContext()];
-    UIImage *imageView= UIGraphicsGetImageFromCurrentImageContext();
+    UIImage *imageView=UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     return imageView;
 }
