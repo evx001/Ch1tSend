@@ -17,9 +17,11 @@
 
 @implementation EVXViewController
 
-- (void)viewDidLoad{
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    NSLog(@"View Did Load!");
+
+    NSLog(@"ViewController Did Load!");
     UIBarButtonItem *cameraButton = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemCamera target:self action:@selector(cameraTapped:) ];
     UIBarButtonItem *shareButton = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(shareTapped:) ];
     self.navigationItem.rightBarButtonItems = @[cameraButton,shareButton];
