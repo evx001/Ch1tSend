@@ -115,6 +115,8 @@
 		60105CFE192D87F3006D5FAD /* Ch1tSend */ = {
 			isa = PBXGroup;
 			children = (
+				60105D07192D87F3006D5FAD /* EVXAppDelegate.h */,
+				60105D08192D87F3006D5FAD /* EVXAppDelegate.m */,
 				60105D0A192D87F3006D5FAD /* Main.storyboard */,
 				60105D2D192D883D006D5FAD /* EVXMasterTableViewController.h */,
 				60105D2E192D883D006D5FAD /* EVXMasterTableViewController.m */,
@@ -129,8 +131,6 @@
 		60105CFF192D87F3006D5FAD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				60105D07192D87F3006D5FAD /* EVXAppDelegate.h */,
-				60105D08192D87F3006D5FAD /* EVXAppDelegate.m */,
 				60105D00192D87F3006D5FAD /* Ch1tSend-Info.plist */,
 				60105D01192D87F3006D5FAD /* InfoPlist.strings */,
 				60105D04192D87F3006D5FAD /* main.m */,
