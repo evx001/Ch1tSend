@@ -33,7 +33,7 @@
 {
     [super viewWillAppear:animated]; 
 
-    myTextField.text = self.imageText;
+    myTextField.text= self.imageText;
 
 }
 
