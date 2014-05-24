@@ -10,6 +10,7 @@
 #import "EVXViewController.h"
 @interface EVXMasterTableViewController (){
  // IBOutlet UIImageView *myImageView;
+
 }
 
 
