@@ -134,8 +134,9 @@
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
     // 0x8c87720 // 0x8f756d0
-    EVXViewController *myEVXViewController=[segue destinationViewController];
-    myEVXViewController.imageName=@"something";
+    EVXViewController *myEVXViewController;
+    myEVXViewController=[segue destinationViewController];
+    //myEVXViewController.imageName=@"something";
 }
 
 
