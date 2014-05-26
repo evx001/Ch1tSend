@@ -9,7 +9,7 @@
 #import "EVXMasterTableViewController.h"
 #import "EVXViewController.h"
 @interface EVXMasterTableViewController (){
-  // IBOutlet UIImageView *myImageView;
+IBOutlet UIImageView *myImageView;
 
 }
 
@@ -30,7 +30,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    NSLog(@"LOADED !!!");
+    NSLog(@"ViewDidLoadInMaterTableController!");
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -65,6 +65,8 @@
 //
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    NSLog(@"UITableViewCell");
+
     static NSString *CellIdentifier= @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
