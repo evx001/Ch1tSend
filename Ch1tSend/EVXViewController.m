@@ -44,7 +44,7 @@
     // Dispose of any resources that can be recreated.
 }
 -(IBAction)cameraTapped:(id)sender{
-    // NSLog(@"WoW button got tapped"); // worked
+    NSLog(@"CameraButtonTapped!"); 
     UIImagePickerController *myPicker = [[UIImagePickerController alloc]init];
     myPicker.delegate = self;
     [self presentViewController:myPicker animated:YES completion:nil];
