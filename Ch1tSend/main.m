@@ -12,7 +12,10 @@
 
 int main(int argc, char * argv[])
 {
+    NSLog(@"BeforeAutoRelease");
     @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([EVXAppDelegate class]));
+        NSLog(@"BeforeReturnInMain");
+                return UIApplicationMain(argc, argv,nil, NSStringFromClass([EVXAppDelegate class]));
+        NSLog(@"AfterReturnInMain");
     }
 }

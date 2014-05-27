@@ -137,8 +137,15 @@ IBOutlet UIImageView *myImageView;
     // Pass the selected object to the new view controller.
     // 0x8c87720 // 0x8f756d0
     EVXViewController *myEVXViewController=[segue destinationViewController];
+    NSLog(@"BeforeSomething");
     myEVXViewController.imageName=@"something";
+    NSLog(@"AfterSomething");
+
+    
 }
+
+
+
 
 
 @end

@@ -10,8 +10,8 @@
 
 @interface EVXViewController()
 {
-    IBOutlet UIImageView *myImageView;
-    IBOutlet UITextField *myTextField;
+IBOutlet UIImageView *myImageView;
+IBOutlet UITextField *myTextField;
 }
 
 @end
@@ -32,10 +32,12 @@
 }
 -(void)viewWillAppear:(BOOL)animated // this grabs the view on reload, keeps the view from vanishing.
 {
-    [super viewWillAppear:animated]; 
+    [super viewWillAppear:animated];
+    NSLog(@"BeforeTextField");
 
     myTextField.text=self.imageText;
 
+        NSLog(@"AfterTextField");
 }
 
 - (void)didReceiveMemoryWarning
