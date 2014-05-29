@@ -56,7 +56,7 @@ IBOutlet UIImageView *myImageView;
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return 5;
+    return 3;
 }
 
 // the main part of TableView
@@ -136,8 +136,11 @@ IBOutlet UIImageView *myImageView;
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
     // 0x8c87720 // 0x8f756d0
+    NSLog(@"PreCallOfControllerSegue");
     EVXViewController *myEVXViewController=[segue destinationViewController];
+    NSLog(@"PreMyControllerSomthing");
     myEVXViewController.imageName=@"something";
+    NSLog(@"endOfBlock"); 
 }
 
 

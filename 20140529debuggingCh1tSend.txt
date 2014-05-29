@@ -1,0 +1,71 @@
+// tried to add this line in EVXMasterTableViewController.m at line 13
+IBOutlet UIInputView *myTextField;
+
+
+
+// these NSLog prints were able to execute before control was transfered to where the exception occured. 
+2014-05-29 15:44:23.604 Ch1tSend[9825:60b] PreMyControllerSomthing
+2014-05-29 15:44:23.604 Ch1tSend[9825:60b] endOfBlock
+
+2014-05-29 15:44:23.675 Ch1tSend[9825:60b] *** Terminating app due to uncaught exception 'NSUnknownKeyException', reason: '[<UIImageView 0xa27f620> setValue:forUndefinedKey:]: this class is not key value coding-compliant for the key myTextField.'
+*** First throw call stack:
+
+
+//////////////////////////////
+// setting debug breakpoint at line 144 in EVXMasterTableViewController.m
+2014-05-29 16:00:14.095 Ch1tSend[10135:60b] endOfBlock
+(lldb) 
+// all is good to here
+
+// the assembly step through
+0x791efa:  movl   0x5c8670(%edi), %eax
+0x791f00:  movl   %eax, 0x4(%esp)
+0x791f04:  movl   %esi, (%esp)
+0x791f07:  calll  0x9e728a                  ; symbol stub for: objc_msgSend
+0x791f0c:  addl   $0x1c, %esp
+0x791f0f:  popl   %esi
+0x791f10:  popl   %edi
+0x791f11:  popl   %ebx
+0x791f12:  popl   %ebp
+0x791f13:  ret    
+///
+0x317965:  movl   -0x88(%ebp), %eax
+0x31796b:  testb  $0x2, 0x5(%esi,%eax)
+0x317970:  je     0x3179a1                  ; -[UITableView _selectRowAtIndexPath:animated:scrollPosition:notifyDelegate:] + 1513
+0x317972:  movl   0xa35207(%edi), %eax
+0x317978:  movl   %eax, 0x4(%esp)
+0x31797c:  movl   %esi, (%esp)
+0x31797f:  calll  0x9e728a                  ; symbol stub for: objc_msgSend
+0x317984:  movl   0xa380a7(%edi), %ecx
+0x31798a:  movl   -0x7c(%ebp), %edx
+0x31798d:  movl   %edx, 0xc(%esp)
+0x317991:  movl   %esi, 0x8(%esp)
+0x317995:  movl   %ecx, 0x4(%esp)
+0x317999:  movl   %eax, (%esp)
+0x31799c:  calll  0x9e728a                  ; symbol stub for: objc_msgSend
+0x3179a1:  movl   0xa47967(%edi), %eax
+0x3179a7:  movl   0xa36403(%edi), %ecx
+0x3179ad:  movl   %esi, 0xc(%esp)
+0x3179b1:  leal   0xa60dbf(%edi), %edx
+0x3179b7:  movl   %edx, 0x8(%esp)
+0x3179bb:  movl   %ecx, 0x4(%esp)
+0x3179bf:  movl   %eax, (%esp)
+0x3179c2:  movl   $0x0, 0x10(%esp)
+0x3179ca:  calll  0x9e728a                  ; symbol stub for: objc_msgSend
+0x3179cf:  movl   %eax, %esi
+0x3179d1:  movl   0xa477bb(%edi), %eax
+0x3179d7:  movl   0xa34f3f(%edi), %ecx
+0x3179dd:  movl   %ecx, 0x4(%esp)
+0x3179e1:  movl   %eax, (%esp)
+0x3179e4:  calll  0x9e728a                  ; symbol stub for: objc_msgSend
+0x3179e9:  movl   0xa37c33(%edi), %ecx
+0x3179ef:  movl   %esi, 0x8(%esp)
+0x3179f3:  jmp    0x3175f2                  ; -[UITableView _selectRowAtIndexPath:animated:scrollPosition:notifyDelegate:] + 570
+0x3179f8:  calll  0x9e803a                  ; symbol stub for: __stack_chk_fail
+////
+
+0x24b08c:  jne    0x24b096                  ; _applyBlockToCFArrayCopiedToStack + 468
+0x24b08e:  leal   -0xc(%ebp), %esp
+///
+
+
