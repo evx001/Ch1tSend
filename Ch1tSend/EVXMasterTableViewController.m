@@ -9,7 +9,7 @@
 #import "EVXMasterTableViewController.h"
 #import "EVXViewController.h"
 @interface EVXMasterTableViewController (){
-// IBOutlet UIImageView *myImageView;
+
 
     IBOutlet UITableView *myImageView;
 }
