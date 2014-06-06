@@ -79,7 +79,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="Pez-0q-1Mh"/>
                     <connections>
-                        <outlet property="myImageView" destination="9S5-m8-w1k" id="ala-Vm-qKl"/>
+                        <outlet property="myTableView" destination="9S5-m8-w1k" id="oZO-cP-PhT"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ocf-Hn-sOB" userLabel="First Responder" sceneMemberID="firstResponder"/>

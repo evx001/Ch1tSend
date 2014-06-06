@@ -9,9 +9,7 @@
 #import "EVXMasterTableViewController.h"
 #import "EVXViewController.h"
 @interface EVXMasterTableViewController (){
-
-
-    IBOutlet UITableView *myImageView;
+ // IBOutlet UIImageView *myImageView;
 }
 
 
@@ -31,7 +29,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    NSLog(@"ViewDidLoadInMaterTableController!");
+    NSLog(@"ViewLOADED !!!");
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -66,8 +64,6 @@
 //
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"UITableViewCell");
-
     static NSString *CellIdentifier= @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
@@ -134,11 +130,12 @@
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
+    NSLog(@"%@",[NSThread callStackSymbols]);
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
-    // 0x8c87720 // 0x8f756d0
-    EVXViewController *myEVXViewController=[segue destinationViewController];
-    myEVXViewController.imageName=@"something";
+    
+    EVXViewController *myEVXViewController = [segue destinationViewController];
+    myEVXViewController.imageName = @"something";
 }
 
 

@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface EVXMasterTableViewController : UITableViewController
+@property (strong, nonatomic) IBOutlet UITableView *myTableView;
 
 @end
