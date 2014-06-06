@@ -12,7 +12,5 @@
 @property (strong, nonatomic) NSString *imageName;
 @property (strong, nonatomic) NSString *imageText;
 
--(IBAction)cameraTapped:(id)sender; // remember to add the actioin in .m
--(IBAction)shareTapped:(id)sender;
-
 @end
+

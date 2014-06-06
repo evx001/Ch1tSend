@@ -44,7 +44,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - Table view data source // helps with organization
+#pragma mark - Table view data source helps with organization
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
@@ -70,8 +70,10 @@
     // Configure the cell...
     
     cell.textLabel.text = @"Hello World!";
-    
+// NSLog(@"%@",[NSThread callStackSymbols]);
     return cell;
+
+
 }
 
 
@@ -130,7 +132,7 @@
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    NSLog(@"%@",[NSThread callStackSymbols]);
+    // NSLog(@"%@",[NSThread callStackSymbols]);
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
     

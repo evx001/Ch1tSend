@@ -10,12 +10,16 @@
 
 @interface EVXViewController (){
     IBOutlet UIImageView *myImageView;
-    IBOutlet UITextField *myTextField;
+//    IBOutlet UITextField *myTextField;
 }
 
 @end
 
 @implementation EVXViewController
+//-(IBAction)cameraTapped:(id)sender;
+// remember to add the actioin in .m
+//-(IBAction)shareTapped:(id)sender;
+
 
 - (void)viewDidLoad{
     [super viewDidLoad];
@@ -31,7 +35,7 @@
 {
     [super viewWillAppear:animated];
 
-    myTextField.text = self.imageText;
+    // myTextField.text = self.imageText;
 
 }
 
