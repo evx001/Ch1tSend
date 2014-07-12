@@ -8,7 +8,8 @@
 
 #import "EVXViewController.h"
 
-@interface EVXViewController (){
+@interface EVXViewController()
+{
     IBOutlet UIImageView *myImageView;
     IBOutlet UITextField *myTextField;
 }
@@ -17,9 +18,11 @@
 
 @implementation EVXViewController
 
-- (void)viewDidLoad{
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    NSLog(@"View Did Load!");
+
+    NSLog(@"ViewController Did Load!");
     UIBarButtonItem *cameraButton = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemCamera target:self action:@selector(cameraTapped:) ];
     UIBarButtonItem *shareButton = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(shareTapped:) ];
     self.navigationItem.rightBarButtonItems = @[cameraButton,shareButton];
@@ -27,11 +30,11 @@
     
     // [myImageView setImage:[UIImage imageNamed:@"food already"]];
 }
--(void)viewWillAppear:(BOOL)animated
+-(void)viewWillAppear:(BOOL)animated // this grabs the view on reload, keeps the view from vanishing.
 {
-    [super viewWillAppear:animated];
+    [super viewWillAppear:animated]; 
 
-    myTextField.text = self.imageText;
+    myTextField.text=self.imageText;
 
 }
 
@@ -73,7 +76,7 @@
 -(UIImage *)saveImageMessage {
     UIGraphicsBeginImageContextWithOptions(self.view.bounds.size, self.view.opaque, 0.0);
     [self.view.layer renderInContext:UIGraphicsGetCurrentContext()];
-    UIImage *imageView= UIGraphicsGetImageFromCurrentImageContext();
+    UIImage *imageView=UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     return imageView;
 }
